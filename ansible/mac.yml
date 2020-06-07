@@ -39,4 +39,6 @@
 
     - name: Install OSX Apps from Brewfile https://github.com/Homebrew/homebrew-bundle
       command: brew bundle --file ~/dotfiles/Brewfile
+      args:
+        chdir: ~/dotfiles/
       when: dotfiles_Brewfile.stat.exists
