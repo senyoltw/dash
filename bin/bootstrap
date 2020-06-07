@@ -34,6 +34,7 @@ git clone https://github.com/senyoltw/dash ~/.dash 2>/dev/null
 if [[ $? != 0 ]] ; then
     git -C ~/.dash pull
 fi
+echo -e "\n\n"
 
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
