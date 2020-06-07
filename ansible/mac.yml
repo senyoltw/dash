@@ -4,11 +4,6 @@
 
   tasks:
 
-    - name: Check Sudo Password
-      command: ls
-      become: yes
-      become_method: sudo
-
     - name: Update Homebrew
       homebrew: update_homebrew=yes
 
