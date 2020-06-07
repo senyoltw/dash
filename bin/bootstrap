@@ -29,8 +29,11 @@ fi
 echo -e "\n\n"
 
 ## Check out a copy of this repo (first time only) ##
-echo 'Checking out Dash repo...'
+echo 'Checking out or Pull Dash repo...'
 git clone https://github.com/senyoltw/dash ~/.dash 2>/dev/null
+if [[ $? != 0 ]] ; then
+    git pull -C ~/.dash
+fi
 
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
