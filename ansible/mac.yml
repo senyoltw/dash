@@ -13,7 +13,30 @@
     - name: Tap bundle
       homebrew_tap: tap=homebrew/bundle
 
-    - name: Install mas
+    - name: Install and Update ansible
+      homebrew:
+        name: ansible
+        state: latest
+
+    - name: Install and Update mas
       homebrew:
         name: mas
         state: latest
+
+    - name: Check dotfiles playbook
+      stat:
+        path: ~/dotfiles/playbook.yml
+      register: dotfiles_playbook
+
+    - name: Install dotfiles
+      include_tasks: ~/dotfiles/playbook.yml
+      when: dotfiles_playbook.stat.exists
+
+    - name: Check brew bundle dump
+      stat:
+        path: ~/dotfiles/Brewfile
+      register: dotfiles_Brewfile
+
+    - name: Install OSX Apps from Brewfile https://github.com/Homebrew/homebrew-bundle
+      command: brew bundle --file ~/dotfiles/Brewfile
+      when: dotfiles_Brewfile.stat.exists
