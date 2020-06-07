@@ -5,7 +5,7 @@
 ## What is this for?
 
 `Dash` is a OSX setup tool forked from IFTTT/dash.
-install homebrew and ansible. and ansible-playbook.
+Install homebrew and ansible. and do ansible-playbook.
 
 ## The tl;dr Version
 
