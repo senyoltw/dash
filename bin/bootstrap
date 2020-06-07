@@ -10,6 +10,14 @@ else
 fi
 echo -e "\n\n"
 
+## Install Git ##
+echo 'Searhing or Installing Git ...'
+which -s git
+if [[ $? != 0 ]] ; then
+    brew install git
+fi
+echo -e "\n\n"
+
 ## Install or Update Ansible ##
 echo 'Installing or Updating Ansible...'
 which -s ansible-playbook
