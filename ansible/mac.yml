@@ -54,4 +54,4 @@
         target: install
       when: 
         - not dotfiles_playbook.stat.exists
-        - dotfiles_Makefile.exists
+        - dotfiles_Makefile.stat.exists
