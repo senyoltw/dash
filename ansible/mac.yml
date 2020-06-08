@@ -34,11 +34,6 @@
         chdir: ~/dotfiles/
       when: dotfiles_Brewfile.stat.exists
 
-    - name: Check dotfiles Makefile
-      stat:
-        path: ~/dotfiles/Makefile
-      register: dotfiles_Makefile
-
     - name: Check dotfiles playbook
       stat:
         path: ~/dotfiles/playbook.yml
@@ -47,6 +42,11 @@
     - name: Install dotfiles
       include_tasks: ~/dotfiles/playbook.yml
       when: dotfiles_playbook.stat.exists
+
+    - name: Check dotfiles Makefile
+      stat:
+        path: ~/dotfiles/Makefile
+      register: dotfiles_Makefile
 
     - name: Install dotfiles by Makefile (if dotfiles_playbook not exists)
       make:
