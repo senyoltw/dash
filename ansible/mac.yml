@@ -48,7 +48,7 @@
       include_tasks: ~/dotfiles/playbook.yml
       when: dotfiles_playbook.stat.exists
 
-    - name: Install dotfiles by Makefile (optional)
+    - name: Install dotfiles by Makefile (if dotfiles_playbook not exists) (optional)
       make:
         chdir: ~/dotfiles/
         target: install
