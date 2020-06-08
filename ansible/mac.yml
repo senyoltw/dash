@@ -23,6 +23,11 @@
         name: mas
         state: latest
 
+    - name: Check dotfiles Makefile
+      stat:
+        path: ~/dotfiles/Makefile
+      register: dotfiles_Makefile
+
     - name: Check dotfiles playbook
       stat:
         path: ~/dotfiles/playbook.yml
