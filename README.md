@@ -37,6 +37,9 @@ It should run idempotently, meaning you should be able to run it as many times a
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/senyoltw/dash/master/bin/bootstrap)"
 
+## What is dotfiles?
+See. https://dotfiles.github.io/
+
 ## License
 
 `Dash` is available under the MIT license. See the LICENSE file for more info.
