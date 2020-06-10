@@ -23,20 +23,6 @@
         name: mas
         state: latest
 
-    - name: Check brew bundle dump
-      stat:
-        path: ~/dotfiles/osx/Brewfile
-      register: dotfiles_Brewfile
-
-    - name: Install OSX Apps from Brewfile https://github.com/Homebrew/homebrew-bundle
-      command: brew bundle --file ~/dotfiles/osx/Brewfile
-      args:
-        chdir: ~/dotfiles/osx/
-      when: dotfiles_Brewfile.stat.exists
-      register: result
-      changed_when: 
-        - '"Installing" in result.stdout'
-
     - name: Check dotfiles playbook
       stat:
         path: ~/dotfiles/osx/playbook.yml
@@ -58,3 +44,17 @@
       when: 
         - not dotfiles_playbook.stat.exists
         - dotfiles_Makefile.stat.exists
+
+    - name: Check brew bundle dump
+      stat:
+        path: ~/dotfiles/osx/Brewfile
+      register: dotfiles_Brewfile
+
+    - name: Install OSX Apps from Brewfile https://github.com/Homebrew/homebrew-bundle
+      command: brew bundle --file ~/dotfiles/osx/Brewfile
+      args:
+        chdir: ~/dotfiles/osx/
+      when: dotfiles_Brewfile.stat.exists
+      register: result
+      changed_when: 
+        - '"Installing" in result.stdout'
