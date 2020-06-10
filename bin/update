@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 echo 'Update OSX setup tool senyoltw/dash'
-echo -e "\n\n"
 
 ## Check out a copy of this repo ##
 echo 'Checking out or Pull Dash repo...'
@@ -9,9 +8,8 @@ git clone https://github.com/senyoltw/dash ~/.dash 2>/dev/null
 if [[ $? != 0 ]] ; then
     git -C ~/.dash pull
 fi
-echo -e "\n\n"
 
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
-echo -e "\n\n"
+echo -e "\n"
 ansible-playbook ~/.dash/ansible/mac.yml -i 127.0.0.1, --ask-become-pass --verbose
