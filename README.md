@@ -47,7 +47,8 @@ If you want to update the packages you have installed, you can use
     ~/.dash/bin/update 
 
 ## What is dotfiles?
-See. https://dotfiles.github.io/
+See. https://dotfiles.github.io/  
+Sample. https://github.com/senyoltw/dotfiles
 
 ## What is Brewfile?
 See. https://docs.brew.sh/Manpage#bundle-subcommand  
