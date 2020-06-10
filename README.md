@@ -20,9 +20,8 @@ This script will install the following:
 - Homebrew with XCode Command Line Tools
 - Ansible
 - git clone this repository `~/.dash`
-- run ansible-playbook `~/.dash/ansible/mac.yml`
 
-Explain ansible-playbook. 
+And run ansible-playbook `~/.dash/ansible/mac.yml`  
 
 - ~/.dash/ansible/mac.yml
   - Update Homebrew, ansible
