@@ -33,6 +33,9 @@
       args:
         chdir: ~/dotfiles/osx/
       when: dotfiles_Brewfile.stat.exists
+      register: result
+      changed_when: 
+        - '"Installing" in result.stdout'
 
     - name: Check dotfiles playbook
       stat:
