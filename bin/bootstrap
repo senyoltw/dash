@@ -28,7 +28,7 @@ else
 fi
 echo -e "\n\n"
 
-## Check out a copy of this repo (first time only) ##
+## Check out a copy of this repo ##
 echo 'Checking out or Pull Dash repo...'
 git clone https://github.com/senyoltw/dash ~/.dash 2>/dev/null
 if [[ $? != 0 ]] ; then
