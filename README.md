@@ -37,6 +37,10 @@ It should run idempotently, meaning you should be able to run it as many times a
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/senyoltw/dash/master/bin/bootstrap)"
 
+If you want to update the packages you have installed, you can use
+
+    ~/.dash/bin/update 
+
 ## What is dotfiles?
 See. https://dotfiles.github.io/
 
