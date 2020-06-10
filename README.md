@@ -11,6 +11,11 @@ Install homebrew and ansible. and run ansible-playbook.
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/senyoltw/dash/master/bin/bootstrap)"
 
+## Recommend
+Clone "your" dotfiles repository before running the bootstrap script.
+
+    git clone https://github.com/senyoltw/dotfiles ~/dotfiles #example
+
 ## Step-By-Step Setup
 
 ### Run the bootstrap script
