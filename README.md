@@ -7,7 +7,7 @@
 `Dash` is a OSX setup tool forked from IFTTT/dash.
 Install homebrew and ansible. and do ansible-playbook.
 
-## The tl;dr Version
+## TL;DR
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/senyoltw/dash/master/bin/bootstrap)"
 
@@ -19,15 +19,19 @@ This script will install the following:
 
 - Homebrew with XCode Command Line Tools
 - Ansible
+- git clone this Repository `~/.dash`
 
 and do ansible-playbook.
 
-- ansible/mac.yml
-- ~/dotfiles/playbook.yml (if exists)
-
-and install OSX apps by [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
-
-- ~/dotfiles/Brewfile  (if exists)
+- ~/.dash/ansible/mac.yml
+  - Update Homebrew, ansible
+  - Install homebrew/cask, homebrew/bundle, mas-cli/mas
+  - (Optional)Install OSX apps by [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
+    - ~/dotfiles/osx/Brewfile (if exists)
+  - (Optional)do ansible-playbook.
+    - ~/dotfiles/osx/playbook.yml (if exists)
+  - (Optional)make install dotfiles
+    - ~/dotfiles/Makefile (if exists and ~/dotfiles/osx/playbook.yml not exists)
 
 It should run idempotently, meaning you should be able to run it as many times as you want and it won't hurt anything. If it fails due to a temporary condition (like network issues), running it again should pick up where it left off. If new items are added to the script, running it against a functioning environment should only add the new things.
 
