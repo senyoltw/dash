@@ -42,7 +42,7 @@ See. https://dotfiles.github.io/
 
 ## What is Brewfile?
 See. https://docs.brew.sh/Manpage#bundle-subcommand  
-- Hou to make Brewfile?  
+- Hou to make Brewfile  
 `brew bundle dump: Write all installed casks/formulae/images/taps into a Brewfile.`
 
 ## License
