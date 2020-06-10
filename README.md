@@ -40,6 +40,11 @@ It should run idempotently, meaning you should be able to run it as many times a
 ## What is dotfiles?
 See. https://dotfiles.github.io/
 
+## What is Brewfile?
+See. https://docs.brew.sh/Manpage#bundle-subcommand  
+- Hou to make Brewfile?  
+`brew bundle dump: Write all installed casks/formulae/images/taps into a Brewfile.`
+
 ## License
 
 `Dash` is available under the MIT license. See the LICENSE file for more info.
