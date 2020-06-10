@@ -33,6 +33,7 @@
       args:
         chdir: ~/dotfiles/osx/
       when: dotfiles_Brewfile.stat.exists
+      changed_when: ret.rc != 0
 
     - name: Check dotfiles playbook
       stat:
