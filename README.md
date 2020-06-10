@@ -31,12 +31,12 @@ And run ansible-playbook [`~/.dash/ansible/mac.yml`](https://github.com/senyoltw
 - ~/.dash/ansible/mac.yml
   - Update Homebrew, ansible
   - Install or Update homebrew/cask, homebrew/bundle, mas-cli/mas
-  - (Optional)Install OSX apps by [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
-    - ~/dotfiles/osx/Brewfile (if exists)
   - (Optional)run ansible-playbook.
     - ~/dotfiles/osx/playbook.yml (if exists)
   - (Optional)make install dotfiles
     - ~/dotfiles/Makefile (if exists and ~/dotfiles/osx/playbook.yml not exists)
+  - (Optional)Install OSX apps by [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
+    - ~/dotfiles/osx/Brewfile (if exists)
 
 It should run idempotently, meaning you should be able to run it as many times as you want and it won't hurt anything. If it fails due to a temporary condition (like network issues), running it again should pick up where it left off. If new items are added to the script, running it against a functioning environment should only add the new things.
 
