@@ -21,7 +21,7 @@ This script will install the following:
 - Ansible
 - git clone this repository `~/.dash`
 
-And run ansible-playbook `~/.dash/ansible/mac.yml`  
+And run ansible-playbook [`~/.dash/ansible/mac.yml`](https://github.com/senyoltw/dash/blob/master/ansible/mac.yml)
 
 - ~/.dash/ansible/mac.yml
   - Update Homebrew, ansible
