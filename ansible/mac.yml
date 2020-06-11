@@ -13,12 +13,12 @@
     - name: Tap bundle
       homebrew_tap: tap=homebrew/bundle
 
-    - name: Install and Update ansible
+    - name: Update ansible
       homebrew:
         name: ansible
         state: latest
 
-    - name: Install and Update mas
+    - name: Install or Update mas
       homebrew:
         name: mas
         state: latest
