@@ -4,7 +4,7 @@
 
 ## What is this for?
 
-`Dash` is a OSX setup tool forked from IFTTT/dash.
+`Dash` is a OSX setup and management tool forked from IFTTT/dash.
 Install homebrew and ansible. and run ansible-playbook.
 
 ## TL;DR
@@ -42,6 +42,7 @@ It should run idempotently, meaning you should be able to run it as many times a
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/senyoltw/dash/master/bin/bootstrap)"
 
+### Update packages
 If you want to update the packages you have installed, you can use
 
     ~/.dash/bin/update 
