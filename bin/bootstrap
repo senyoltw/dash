@@ -37,7 +37,7 @@ fi
 echo -e "\n\n"
 
 ## Check out a copy of dotfiles repo ##
-if [ -v DOTFILES_URL ] ; then
+if [ -v "DOTFILES_URL" ] ; then
     echo 'Checking out dotfiles repo...'
     git clone $DOTFILES_URL ~/dotfiles 2>/dev/null
     echo -e "\n\n"
