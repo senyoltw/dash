@@ -47,8 +47,7 @@ fi
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
 
 ### Notice
-echo 'NOTE'
-echo 'Before run Ansible Playbook, Sign into the Mac App Store GUI app manually.'
+echo 'NOTE:Before run Ansible Playbook, Sign into the Mac App Store GUI app manually.'
 echo 'https://github.com/mas-cli/mas/issues/164'
 
 echo -e "\n\n"
