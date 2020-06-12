@@ -36,6 +36,13 @@ if [[ $? != 0 ]] ; then
 fi
 echo -e "\n\n"
 
+## Check out a copy of dotfiles repo ##
+if [[ -v DOTFILES_URL ]] ; then
+    echo 'Checking out dotfiles repo...'
+    git clone $DOTFILES_URL ~/dotfiles 2>/dev/null
+    echo -e "\n\n"
+fi
+
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
 
