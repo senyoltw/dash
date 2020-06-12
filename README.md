@@ -13,7 +13,7 @@ Install homebrew and ansible. and run ansible-playbook.
 
 ## Recommend
 Export "your" dotfiles repository URL to $DOTFILES_URL before running the bootstrap script.  
-If you make `osx/playbook.yml` and `osx/Brewfile` file, [playbook load it and run](https://github.com/senyoltw/dash/blob/master/ansible/mac.yml).
+bootstrap script pull to `~/dotfiles`. and if you make `osx/playbook.yml` and `osx/Brewfile` file, playbook load it and run.
 
     export DOTFILES_URL=https://github.com/senyoltw/dotfiles  #example
 
