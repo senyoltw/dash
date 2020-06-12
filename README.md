@@ -26,6 +26,7 @@ This script will install the following:
 - Homebrew with XCode Command Line Tools
 - Ansible
 - git clone this repository `~/.dash`
+- (Optional)git clone dotfiles repository `~/dotfiles` 
 
 And run ansible-playbook [`~/.dash/ansible/mac.yml`](https://github.com/senyoltw/dash/blob/master/ansible/mac.yml)
 
