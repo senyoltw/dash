@@ -35,8 +35,6 @@ And run ansible-playbook [`~/.dash/ansible/mac.yml`](https://github.com/senyoltw
   - Install or Update homebrew/cask, homebrew/bundle, mas-cli/mas
   - (Optional)run ansible-playbook.
     - ~/dotfiles/osx/playbook.yml (if exists)
-  - (Optional)make install dotfiles
-    - ~/dotfiles/Makefile (if exists and ~/dotfiles/osx/playbook.yml not exists)
   - (Optional)Install OSX apps by [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
     - ~/dotfiles/osx/Brewfile (if exists)
 
