@@ -16,6 +16,7 @@ Export "your" dotfiles repository URL to $DOTFILES_URL before running the bootst
 bootstrap script pull to `~/dotfiles`. and if you make `osx/playbook.yml` and `osx/Brewfile` file, playbook load it and run.
 
     export DOTFILES_URL=https://github.com/senyoltw/dotfiles  #example
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/senyoltw/dash/master/bin/bootstrap)"
 
 ## Step-By-Step Setup
 
