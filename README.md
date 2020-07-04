@@ -1,5 +1,3 @@
-![Dash](https://raw.githubusercontent.com/IFTTT/dash/images/images/dash.png "Dash")
-
 # Dash
 
 ## What is this for?
